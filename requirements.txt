@@ -1,0 +1,6 @@
+torch
+nibabel==3.2
+dgl
+matplotlib
+medpy
+python-dotenv

@@ -1,1 +1,1 @@
-# GNN-BraTS2021
+# GNN-BRaTs2021
