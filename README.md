@@ -1,5 +1,5 @@
 # GNN-BRaTs2021
-Questa repository contiene il progetto di tesi svolto da Daniela Amendola e Andrea Basile, presso l'università degli studi di Bari "Aldo Moro".
+Questa repository contiene il progetto di tesi svolto da Daniela Amendola e Andrea Basile, presso l'Università degli Studi di Bari "Aldo Moro".
 
 ## Requirements
 torch
