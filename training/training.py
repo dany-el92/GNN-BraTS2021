@@ -73,8 +73,6 @@ train_batches = list(grouper(train_data, 6))
 val_batches = list(grouper(val_data, 6))
 test_batches = list(grouper(test_data, 6))
 
-all_dataset_batches = list(grouper(dataset, 6))
-
 
 import dgl
 def train_batch(timestamp, dgl_train_graphs, dgl_validation_graphs, model, loss_w, patience, val_lr, val_weight_decay, val_gamma):
@@ -247,5 +245,5 @@ save_settings(timestamp, model, patience, lr, weight_decay, gamma, args.model, h
               val_dropout, layer_sizes, in_feats, n_classes, val_feat_drop, val_attn_drop, dataset_pickle_path, val_k, model_path = None)
 
 
-trained_model = train_batch(timestamp, all_dataset_batches, val_batches, model, avg_weights, patience, lr, weight_decay, gamma)
+trained_model = train_batch(timestamp, train_batches, val_batches, model, avg_weights, patience, lr, weight_decay, gamma)
 # trained_model = train(train_data, val_data, model, avg_weights)
